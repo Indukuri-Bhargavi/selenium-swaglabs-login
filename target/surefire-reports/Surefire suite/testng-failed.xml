@@ -3,13 +3,12 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.selenium_automation_framework.LoginTest">
+      <class name="tests.LoginTest">
         <methods>
-          <include name="validLoginTest"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="loginWithMultipleUsers" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.selenium_automation_framework.LoginTest -->
+      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
