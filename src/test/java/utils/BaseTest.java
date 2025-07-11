@@ -1,4 +1,4 @@
-package com.selenium_automation_framework;
+package utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-    WebDriver driver;
+  public  WebDriver driver;
 
     @BeforeMethod
     public void setUp() {

@@ -1,7 +1,10 @@
-package com.selenium_automation_framework;
+package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import pages.LoginPage;
+import utils.BaseTest;
 
 public class LoginTest extends BaseTest {
     @Test

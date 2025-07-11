@@ -22,10 +22,10 @@ selenium-swaglabs-login/
 │ ├── main/
 │ │ └── java/
 │ │ └── pages/ # Page Object classes
-│ │ └── utils/ # Base classes, config
 │ ├── test/
 │ │ └── java/
 │ │ └── tests/ # TestNG test cases
+│ │ └──
 ├── pom.xml # Maven dependencies
 ├── testng.xml # Test suite config
 └── README.md
