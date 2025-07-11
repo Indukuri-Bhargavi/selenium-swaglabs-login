@@ -24,8 +24,8 @@ selenium-swaglabs-login/
 │ │ └── pages/ # Page Object classes
 │ ├── test/
 │ │ └── java/
+│ │ └── base/ #BaseTest.java (with TestNG annotations)
 │ │ └── tests/ # TestNG test cases
-│ │ └──
 ├── pom.xml # Maven dependencies
 ├── testng.xml # Test suite config
 └── README.md
