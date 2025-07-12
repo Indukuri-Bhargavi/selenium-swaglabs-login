@@ -2,9 +2,11 @@ package listeners;
 
 import org.testng.*;
 import com.aventstack.extentreports.*;
-import utils.ExtentManager;
-import utils.ScreenshotUtil;
+
 import base.BaseTest;
+import helpers.ExtentManager;
+import helpers.ScreenshotUtil;
+
 import org.openqa.selenium.WebDriver;
 
 public class TestListener extends BaseTest implements ITestListener {
@@ -24,7 +26,7 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        WebDriver driver = ((BaseTest) result.getInstance()).driver;
+        WebDriver driver = ((BaseTest) result.getInstance()).getDriver();
         String screenshotPath = ScreenshotUtil.captureScreenshot(driver, result.getName());
         if (screenshotPath != null) {
             test.addScreenCaptureFromPath(screenshotPath);  // use absolute path

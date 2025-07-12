@@ -1,3 +1,6 @@
 pages\LoginPage.class
+utils\DriverFactory.class
 utils\ConfigReader.class
+utils\ExcelUtil.class
 utils\ScreenshotUtil.class
+utils\ExtentManager.class

@@ -1,21 +1,29 @@
 package base;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
-import utils.ConfigReader;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
+import helpers.ConfigReader;
+import helpers.DriverFactory;
+
 
 public class BaseTest {
-	public WebDriver driver;
+	  private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-	@BeforeMethod
-	public void setUp() {
-	    WebDriverManager.chromedriver().setup();
+	    public WebDriver getDriver() {
+	        return driver.get();
+	    }
 
-	    driver = new ChromeDriver();
-	    driver.get(ConfigReader.get("url"));
-	    driver.manage().window().maximize();
-	}
+	    @BeforeMethod
+	    public void setUp() {
+	        String browser = ConfigReader.get("browser");
+	        driver.set(DriverFactory.createDriver(browser)); // ✅ This must be set
+	        getDriver().manage().window().maximize();
+	        getDriver().get(ConfigReader.get("url"));
+	    }
 
-}
+	    @AfterMethod
+	    public void tearDown() {
+	        getDriver().quit();
+	        driver.remove();
+	    }}

@@ -1,3 +1,5 @@
 base\BaseTest.class
+tests\NegativeLoginTest.class
 tests\LoginTest.class
+api\UserApiTest.class
 listeners\TestListener.class
