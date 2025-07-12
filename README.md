@@ -1,55 +1,88 @@
 # 🔐 SwagLabs Login Automation
 
-This project is a Selenium-based automation test suite developed using **Java**, **TestNG**, and **Maven**. It verifies the login functionality of [SwagLabs](https://www.saucedemo.com/).
+# Selenium Automation Framework 🚀
 
----
-
-## 🚀 Technologies Used
-
-- Java 8+
-- Selenium WebDriver
-- TestNG
-- Maven
-- WebDriverManager
-- Eclipse IDE (or IntelliJ)
+This is a hybrid automation framework built using **Selenium WebDriver**, **TestNG**, **Maven**, and **ExtentReports**, designed to support robust web UI testing and REST API validation.
 
 ---
 
 ## 📁 Project Structure
 
-selenium-swaglabs-login/
-├── src/
-│ ├── main/
-│ │ └── java/
-│ │ └── pages/ # Page Object classes
-│ ├── test/
-│ │ └── java/
-│ │ └── base/ #BaseTest.java (with TestNG annotations)
-│ │ └── tests/ # TestNG test cases
-├── pom.xml # Maven dependencies
-├── testng.xml # Test suite config
-└── README.md
+selenium-automation-framework/
+├── src
+│ ├── main
+│ │ └── java
+│ │ ├── helpers # Utility classes (ConfigReader, ExcelUtil, ScreenshotUtil, etc.)
+│ │ └── pages # Page Object Model (POM) classes
+│ └── test
+│ └── java
+│ ├── api # REST Assured-based API tests
+│ ├── base # BaseTest with ThreadLocal WebDriver management
+│ └── testcases # TestNG test classes for positive and negative flows
+---
+
 
 ---
 
-## 🔧 Setup Instructions
+## ✨ Features
 
-1. Clone this repo:
-```bash
-git clone https://github.com/your-username/selenium-swaglabs-login.git
-2. Import into Eclipse or IntelliJ as a Maven project
+- ✅ **Selenium WebDriver with Java**
+- ✅ **TestNG** for assertions and test orchestration
+- ✅ **Parallel Execution** using `ThreadLocal<WebDriver>`
+- ✅ **Data-Driven Testing** using Apache POI (Excel)
+- ✅ **Cross-Browser Support** via WebDriverManager
+- ✅ **ExtentReports** with screenshots on failure
+- ✅ **Page Object Model (POM)** for clean separation of test logic
+- ✅ **API Testing** using **Rest Assured**
+- ✅ Configurable via `config.properties`
 
-3. Run tests using:
-mvn clean test
+---
 
-## Test Scenario Covered
-Login Test with valid credentials
+## 🔧 Technologies Used
 
-Validates successful navigation to the product dashboard
+- Java
+- Selenium WebDriver
+- TestNG
+- Maven
+- ExtentReports
+- Apache POI
+- Rest Assured
+- WebDriverManager
 
-## Author
+---
+
+## 📄 How to Run
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Indukuri-Bhargavi/selenium-automation-framework.git
+2. Configure config.properties:
+	url=https://www.saucedemo.com/
+	browser=chrome
+3. Run the test suite via TestNG XML:
+	mvn clean test
+4. View reports:
+	Open test-output/ExtentReport.html in browser for visual test report.
+
+
+
+📊 Sample Test Scenarios
+✅ Valid Login (UI)
+
+❌ Invalid Login (error validation)
+
+🔄 Cross-browser execution (Chrome, Firefox, Edge)
+
+📡 REST API validation using ReqRes (GET / POST)
+
+📸 Automatic screenshot capture on test failure
+
+
+📌 Author
 Bhargavi Indukuri
-QA Engineer | Selenium | TestNG | Automation Enthusiast
+Selenium Automation Engineer
+GitHub: Indukuri-Bhargavi
 
-## Note
-This project is for practice and demonstration purposes. The test site https://www.saucedemo.com is publicly accessible and intended for automation learning.
+📬 Contributions & Feedback
+Feel free to fork, raise issues, or suggest improvements via GitHub.
+For job-specific inquiries or demo requests, contact: bhargaviraju.indukuri@gmail.com
