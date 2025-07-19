@@ -1,147 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-12T14:57:24 IST" name="All Tests" finished-at="2025-07-12T14:58:37 IST" duration-ms="73283">
+  <suite started-at="2025-07-15T16:17:24 IST" name="Default suite" finished-at="2025-07-15T16:17:33 IST" duration-ms="9251">
     <groups>
     </groups>
-    <test started-at="2025-07-12T14:57:24 IST" name="SwagLabs Tests" finished-at="2025-07-12T14:58:37 IST" duration-ms="73283">
-      <class name="testcases.ValidLoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ValidLoginTest@2ca923bb]" started-at="2025-07-12T14:57:26 IST" name="setUp" finished-at="2025-07-12T14:57:52 IST" duration-ms="25816" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ValidLoginTest@2ca923bb]" started-at="2025-07-12T14:57:26 IST" name="setUp" finished-at="2025-07-12T14:57:53 IST" duration-ms="26506" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ValidLoginTest@2ca923bb]" started-at="2025-07-12T14:57:26 IST" name="setUp" finished-at="2025-07-12T14:57:52 IST" duration-ms="25900" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginWithMultipleUsers(java.lang.String,java.lang.String)[pri:0, instance:testcases.ValidLoginTest@2ca923bb]" started-at="2025-07-12T14:57:52 IST" name="loginWithMultipleUsers" data-provider="loginData" finished-at="2025-07-12T14:58:04 IST" duration-ms="12398" status="FAIL">
+    <test started-at="2025-07-15T16:17:24 IST" name="Default test" finished-at="2025-07-15T16:17:33 IST" duration-ms="9251">
+      <class name="api.CreateUserDataDrivenTest">
+        <test-method signature="createUserTest(java.lang.String,java.lang.String,int)[pri:0, instance:api.CreateUserDataDrivenTest@61322f9d]" started-at="2025-07-15T16:17:25 IST" name="createUserTest" data-provider="userData" finished-at="2025-07-15T16:17:32 IST" duration-ms="7665" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[locked_out_user]]>
+                <![CDATA[Bhargavi]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at testcases.ValidLoginTest.loginWithMultipleUsers(ValidLoginTest.java:32)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithMultipleUsers -->
-        <test-method signature="loginWithMultipleUsers(java.lang.String,java.lang.String)[pri:0, instance:testcases.ValidLoginTest@2ca923bb]" started-at="2025-07-12T14:57:52 IST" name="loginWithMultipleUsers" data-provider="loginData" finished-at="2025-07-12T14:58:04 IST" duration-ms="11910" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithMultipleUsers -->
-        <test-method signature="loginWithMultipleUsers(java.lang.String,java.lang.String)[pri:0, instance:testcases.ValidLoginTest@2ca923bb]" started-at="2025-07-12T14:57:53 IST" name="loginWithMultipleUsers" data-provider="loginData" finished-at="2025-07-12T14:58:04 IST" duration-ms="11225" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[problem_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithMultipleUsers -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.ValidLoginTest@2ca923bb]" started-at="2025-07-12T14:58:04 IST" name="tearDown" finished-at="2025-07-12T14:58:21 IST" duration-ms="17142" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.ValidLoginTest@2ca923bb]" started-at="2025-07-12T14:58:04 IST" name="tearDown" finished-at="2025-07-12T14:58:20 IST" duration-ms="16335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.ValidLoginTest@2ca923bb]" started-at="2025-07-12T14:58:05 IST" name="tearDown" finished-at="2025-07-12T14:58:20 IST" duration-ms="14970" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testcases.ValidLoginTest -->
-      <class name="testcases.InvalidLoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InvalidLoginTest@15a04efb]" started-at="2025-07-12T14:57:26 IST" name="setUp" finished-at="2025-07-12T14:57:52 IST" duration-ms="25819" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.InvalidLoginTest@15a04efb]" started-at="2025-07-12T14:57:52 IST" name="loginWithInvalidCredentials" data-provider="negativeLoginData" finished-at="2025-07-12T14:58:01 IST" duration-ms="8586" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[wrong_pass]]>
+                <![CDATA[QA Engineer]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Epic sadface: Username and password do not match]]>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method signature="createUserTest(java.lang.String,java.lang.String,int)[pri:0, instance:api.CreateUserDataDrivenTest@61322f9d]" started-at="2025-07-15T16:17:32 IST" name="createUserTest" data-provider="userData" finished-at="2025-07-15T16:17:33 IST" duration-ms="161" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Developer]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Error message mismatch expected [Epic sadface: Username and password do not match] but found [Epic sadface: Username and password do not match any user in this service]]]>
+              <![CDATA[Invalid input provided: name/job is null, blank, or 'null'.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message mismatch expected [Epic sadface: Username and password do not match] but found [Epic sadface: Username and password do not match any user in this service]
+              <![CDATA[java.lang.AssertionError: Invalid input provided: name/job is null, blank, or 'null'.
 at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at testcases.InvalidLoginTest.loginWithInvalidCredentials(InvalidLoginTest.java:26)
+at api.CreateUserDataDrivenTest.createUserTest(CreateUserDataDrivenTest.java:47)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -152,82 +64,54 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InvalidLoginTest@15a04efb]" started-at="2025-07-12T14:58:01 IST" name="tearDown" finished-at="2025-07-12T14:58:08 IST" duration-ms="6721" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InvalidLoginTest@15a04efb]" started-at="2025-07-12T14:58:08 IST" name="setUp" finished-at="2025-07-12T14:58:15 IST" duration-ms="7324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.InvalidLoginTest@15a04efb]" started-at="2025-07-12T14:58:15 IST" name="loginWithInvalidCredentials" data-provider="negativeLoginData" finished-at="2025-07-12T14:58:16 IST" duration-ms="1273" status="PASS">
+        </test-method> <!-- createUserTest -->
+        <test-method signature="createUserTest(java.lang.String,java.lang.String,int)[pri:0, instance:api.CreateUserDataDrivenTest@61322f9d]" started-at="2025-07-15T16:17:33 IST" name="createUserTest" data-provider="userData" finished-at="2025-07-15T16:17:33 IST" duration-ms="145" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[locked_out_user]]>
+                <![CDATA[Anil]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[secret_sauce]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Epic sadface: Sorry, this user has been locked out.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InvalidLoginTest@15a04efb]" started-at="2025-07-12T14:58:16 IST" name="tearDown" finished-at="2025-07-12T14:58:21 IST" duration-ms="4633" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InvalidLoginTest@15a04efb]" started-at="2025-07-12T14:58:21 IST" name="setUp" finished-at="2025-07-12T14:58:29 IST" duration-ms="7709" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.InvalidLoginTest@15a04efb]" started-at="2025-07-12T14:58:29 IST" name="loginWithInvalidCredentials" data-provider="negativeLoginData" finished-at="2025-07-12T14:58:30 IST" duration-ms="1466" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[wrong_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[wrong_pass]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Epic sadface: Username and password do not match]]>
+                <![CDATA[3]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Error message mismatch expected [Epic sadface: Username and password do not match] but found [Epic sadface: Username and password do not match any user in this service]]]>
+              <![CDATA[Invalid input provided: name/job is null, blank, or 'null'.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message mismatch expected [Epic sadface: Username and password do not match] but found [Epic sadface: Username and password do not match any user in this service]
+              <![CDATA[java.lang.AssertionError: Invalid input provided: name/job is null, blank, or 'null'.
 at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at testcases.InvalidLoginTest.loginWithInvalidCredentials(InvalidLoginTest.java:26)
+at api.CreateUserDataDrivenTest.createUserTest(CreateUserDataDrivenTest.java:47)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -238,20 +122,87 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InvalidLoginTest@15a04efb]" started-at="2025-07-12T14:58:30 IST" name="tearDown" finished-at="2025-07-12T14:58:37 IST" duration-ms="6870" status="PASS">
+        </test-method> <!-- createUserTest -->
+        <test-method signature="createUserTest(java.lang.String,java.lang.String,int)[pri:0, instance:api.CreateUserDataDrivenTest@61322f9d]" started-at="2025-07-15T16:17:33 IST" name="createUserTest" data-provider="userData" finished-at="2025-07-15T16:17:33 IST" duration-ms="132" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid input provided: name/job is null, blank, or 'null'.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid input provided: name/job is null, blank, or 'null'.
+at org.testng.Assert.fail(Assert.java:110)
+at api.CreateUserDataDrivenTest.createUserTest(CreateUserDataDrivenTest.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testcases.InvalidLoginTest -->
-    </test> <!-- SwagLabs Tests -->
-  </suite> <!-- All Tests -->
+        </test-method> <!-- createUserTest -->
+      </class> <!-- api.CreateUserDataDrivenTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

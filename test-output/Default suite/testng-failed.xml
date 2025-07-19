@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium_automation_framework.LoginTest">
+      <class name="api.CreateUserDataDrivenTest">
         <methods>
-          <include name="validLoginTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="createUserTest" invocation-numbers="1 2 3"/>
         </methods>
-      </class> <!-- com.selenium_automation_framework.LoginTest -->
+      </class> <!-- api.CreateUserDataDrivenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -14,7 +14,7 @@ public class ValidLoginTest extends BaseTest {
 	
 	@DataProvider(name = "loginData",parallel = true)
 	public Object[][] getData() {
-	    return ExcelUtil.readLoginData("test-data/LoginData.xlsx", "Login");
+	    return ExcelUtil.readUserData("test-data/LoginData.xlsx", "Login");
 	}
 
     @Test(dataProvider = "loginData")

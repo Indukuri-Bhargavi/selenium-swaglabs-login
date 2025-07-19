@@ -1,5 +1,9 @@
+C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\test\java\api\CreateUserAPITest.java
+C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\test\java\api\DeleteUserAPITest.java
+C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\test\java\api\GetUserAPITest.java
+C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\test\java\api\UpdateUserAPITest.java
 C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\test\java\api\UserApiTest.java
 C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\test\java\base\BaseTest.java
 C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\test\java\listeners\TestListener.java
-C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\test\java\tests\LoginTest.java
-C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\test\java\tests\NegativeLoginTest.java
+C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\test\java\testcases\InvalidLoginTest.java
+C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\test\java\testcases\ValidLoginTest.java
