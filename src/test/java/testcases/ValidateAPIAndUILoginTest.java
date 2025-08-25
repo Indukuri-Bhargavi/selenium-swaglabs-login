@@ -2,6 +2,7 @@ package testcases;
 
 import base.BaseTest;
 import helpers.ConfigReader;
+import helpers.DriverFactory;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.openqa.selenium.By;
@@ -31,13 +32,13 @@ public class ValidateAPIAndUILoginTest extends BaseTest {
         test.get().info("✅ Email from API: " + email);
 
         // 🔹 Step 2: UI Verification
-        getDriver().get("https://www.saucedemo.com/");
-        String title = getDriver().getTitle();
+        DriverFactory.getDriver().get("https://www.saucedemo.com/");
+        String title = DriverFactory.getDriver().getTitle();
         test.get().info("✅ Page Title: " + title);
         Assert.assertEquals(title, "Swag Labs");
 
         // Optionally check element visibility
-        boolean isLoginBoxPresent = getDriver().findElement(By.id("login-button")).isDisplayed();
+        boolean isLoginBoxPresent = DriverFactory.getDriver().findElement(By.id("login-button")).isDisplayed();
         Assert.assertTrue(isLoginBoxPresent, "Login button not found on UI");
 
         test.get().pass("🎉 API + UI Test Passed");

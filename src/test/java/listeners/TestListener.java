@@ -26,7 +26,7 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        WebDriver driver = ((BaseTest) result.getInstance()).getDriver();
+        WebDriver driver = helpers.DriverFactory.getDriver();
         String screenshotPath = ScreenshotUtil.captureScreenshot(driver, result.getName());
         if (screenshotPath != null) {
             test.addScreenCaptureFromPath(screenshotPath);  // use absolute path

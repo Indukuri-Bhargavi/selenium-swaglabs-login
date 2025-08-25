@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="18" total="35" passed="13" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-25T14:46:57 IST" name="Surefire suite" finished-at="2025-08-25T14:47:36 IST" duration-ms="38710">
+    <groups>
+    </groups>
+    <test started-at="2025-08-25T14:46:57 IST" name="Surefire test" finished-at="2025-08-25T14:47:36 IST" duration-ms="38710">
+      <class name="testcases.ValidLoginTest">
+        <test-method signature="loginWithMultipleUsers(java.lang.String,java.lang.String)[pri:0, instance:testcases.ValidLoginTest@19932c16]" started-at="2025-08-25T14:47:36 IST" name="loginWithMultipleUsers" data-provider="loginData" finished-at="2025-08-25T14:47:36 IST" duration-ms="26" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void testcases.ValidLoginTest.loginWithMultipleUsers(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: loginWithMultipleUsers([java.lang.String arg0, java.lang.String arg1])
+Arguments: [(java.lang.String) standard_user,(java.lang.String) secret_sauce,(java.lang.Integer) 1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void testcases.ValidLoginTest.loginWithMultipleUsers(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: loginWithMultipleUsers([java.lang.String arg0, java.lang.String arg1])
+Arguments: [(java.lang.String) standard_user,(java.lang.String) secret_sauce,(java.lang.Integer) 1]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:909)
+at org.testng.internal.invokers.MethodRunner.runInParallel(MethodRunner.java:107)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:958)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithMultipleUsers -->
+      </class> <!-- testcases.ValidLoginTest -->
+      <class name="api.CreateUserDataDrivenTest">
+        <test-method signature="createUserTest(java.lang.String,java.lang.String,int)[pri:0, instance:api.CreateUserDataDrivenTest@158da8e]" started-at="2025-08-25T14:47:07 IST" name="createUserTest" data-provider="userData" finished-at="2025-08-25T14:47:08 IST" duration-ms="886" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhargavi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QA Engineer]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method signature="createUserTest(java.lang.String,java.lang.String,int)[pri:0, instance:api.CreateUserDataDrivenTest@158da8e]" started-at="2025-08-25T14:47:08 IST" name="createUserTest" data-provider="userData" finished-at="2025-08-25T14:47:08 IST" duration-ms="51" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Developer]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid input provided: name/job is null, blank, or 'null'.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid input provided: name/job is null, blank, or 'null'.
+at org.testng.Assert.fail(Assert.java:110)
+at api.CreateUserDataDrivenTest.createUserTest(CreateUserDataDrivenTest.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method signature="createUserTest(java.lang.String,java.lang.String,int)[pri:0, instance:api.CreateUserDataDrivenTest@158da8e]" started-at="2025-08-25T14:47:08 IST" name="createUserTest" data-provider="userData" finished-at="2025-08-25T14:47:08 IST" duration-ms="91" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anil]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid input provided: name/job is null, blank, or 'null'.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid input provided: name/job is null, blank, or 'null'.
+at org.testng.Assert.fail(Assert.java:110)
+at api.CreateUserDataDrivenTest.createUserTest(CreateUserDataDrivenTest.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method signature="createUserTest(java.lang.String,java.lang.String,int)[pri:0, instance:api.CreateUserDataDrivenTest@158da8e]" started-at="2025-08-25T14:47:08 IST" name="createUserTest" data-provider="userData" finished-at="2025-08-25T14:47:08 IST" duration-ms="119" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid input provided: name/job is null, blank, or 'null'.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid input provided: name/job is null, blank, or 'null'.
+at org.testng.Assert.fail(Assert.java:110)
+at api.CreateUserDataDrivenTest.createUserTest(CreateUserDataDrivenTest.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+      </class> <!-- api.CreateUserDataDrivenTest -->
+      <class name="testcases.InvalidLoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.InvalidLoginTest@792b749c]" started-at="2025-08-25T14:47:25 IST" name="setUp" finished-at="2025-08-25T14:47:26 IST" duration-ms="1235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.InvalidLoginTest@792b749c]" started-at="2025-08-25T14:47:26 IST" name="loginWithInvalidCredentials" data-provider="negativeLoginData" finished-at="2025-08-25T14:47:27 IST" duration-ms="1104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong_pass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InvalidLoginTest@792b749c]" started-at="2025-08-25T14:47:27 IST" name="tearDown" finished-at="2025-08-25T14:47:28 IST" duration-ms="539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.InvalidLoginTest@792b749c]" started-at="2025-08-25T14:47:28 IST" name="setUp" finished-at="2025-08-25T14:47:29 IST" duration-ms="1859" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.InvalidLoginTest@792b749c]" started-at="2025-08-25T14:47:29 IST" name="loginWithInvalidCredentials" data-provider="negativeLoginData" finished-at="2025-08-25T14:47:30 IST" duration-ms="496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Sorry, this user has been locked out.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InvalidLoginTest@792b749c]" started-at="2025-08-25T14:47:30 IST" name="tearDown" finished-at="2025-08-25T14:47:30 IST" duration-ms="507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.InvalidLoginTest@792b749c]" started-at="2025-08-25T14:47:30 IST" name="setUp" finished-at="2025-08-25T14:47:32 IST" duration-ms="1272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.InvalidLoginTest@792b749c]" started-at="2025-08-25T14:47:32 IST" name="loginWithInvalidCredentials" data-provider="negativeLoginData" finished-at="2025-08-25T14:47:33 IST" duration-ms="1230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong_pass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InvalidLoginTest@792b749c]" started-at="2025-08-25T14:47:33 IST" name="tearDown" finished-at="2025-08-25T14:47:33 IST" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.InvalidLoginTest -->
+      <class name="api.UserApiTest">
+        <test-method signature="verifyGetUser()[pri:0, instance:api.UserApiTest@661972b0]" started-at="2025-08-25T14:47:24 IST" name="verifyGetUser" finished-at="2025-08-25T14:47:25 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetUser -->
+      </class> <!-- api.UserApiTest -->
+      <class name="api.DeleteUserAPITest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:api.DeleteUserAPITest@74e52303]" started-at="2025-08-25T14:47:08 IST" name="setUp" finished-at="2025-08-25T14:47:10 IST" duration-ms="2009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteUser()[pri:0, instance:api.DeleteUserAPITest@74e52303]" started-at="2025-08-25T14:47:10 IST" name="testDeleteUser" finished-at="2025-08-25T14:47:10 IST" duration-ms="662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.DeleteUserAPITest@74e52303]" started-at="2025-08-25T14:47:10 IST" name="tearDown" finished-at="2025-08-25T14:47:11 IST" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- api.DeleteUserAPITest -->
+      <class name="api.NegativeLoginAPITest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:api.NegativeLoginAPITest@7c729a55]" started-at="2025-08-25T14:47:14 IST" name="setUp" finished-at="2025-08-25T14:47:15 IST" duration-ms="1792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidEndpoint()[pri:0, instance:api.NegativeLoginAPITest@7c729a55]" started-at="2025-08-25T14:47:15 IST" name="testInvalidEndpoint" finished-at="2025-08-25T14:47:16 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidEndpoint -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.NegativeLoginAPITest@7c729a55]" started-at="2025-08-25T14:47:16 IST" name="tearDown" finished-at="2025-08-25T14:47:16 IST" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:api.NegativeLoginAPITest@7c729a55]" started-at="2025-08-25T14:47:16 IST" name="setUp" finished-at="2025-08-25T14:47:18 IST" duration-ms="1759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMissingEmailAndPassword()[pri:0, instance:api.NegativeLoginAPITest@7c729a55]" started-at="2025-08-25T14:47:18 IST" name="testMissingEmailAndPassword" finished-at="2025-08-25T14:47:19 IST" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMissingEmailAndPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.NegativeLoginAPITest@7c729a55]" started-at="2025-08-25T14:47:19 IST" name="tearDown" finished-at="2025-08-25T14:47:19 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:api.NegativeLoginAPITest@7c729a55]" started-at="2025-08-25T14:47:19 IST" name="setUp" finished-at="2025-08-25T14:47:20 IST" duration-ms="1431" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMissingPassword()[pri:0, instance:api.NegativeLoginAPITest@7c729a55]" started-at="2025-08-25T14:47:20 IST" name="testMissingPassword" finished-at="2025-08-25T14:47:21 IST" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMissingPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.NegativeLoginAPITest@7c729a55]" started-at="2025-08-25T14:47:21 IST" name="tearDown" finished-at="2025-08-25T14:47:22 IST" duration-ms="690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- api.NegativeLoginAPITest -->
+      <class name="api.UpdateUserAPITest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:api.UpdateUserAPITest@3bb9a3ff]" started-at="2025-08-25T14:47:22 IST" name="setUp" finished-at="2025-08-25T14:47:23 IST" duration-ms="1627" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testUpdateUser()[pri:0, instance:api.UpdateUserAPITest@3bb9a3ff]" started-at="2025-08-25T14:47:23 IST" name="testUpdateUser" finished-at="2025-08-25T14:47:24 IST" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.UpdateUserAPITest@3bb9a3ff]" started-at="2025-08-25T14:47:24 IST" name="tearDown" finished-at="2025-08-25T14:47:24 IST" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- api.UpdateUserAPITest -->
+      <class name="api.GetUserAPITest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:api.GetUserAPITest@47af7f3d]" started-at="2025-08-25T14:47:11 IST" name="setUp" finished-at="2025-08-25T14:47:13 IST" duration-ms="1910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetUser()[pri:0, instance:api.GetUserAPITest@47af7f3d]" started-at="2025-08-25T14:47:13 IST" name="testGetUser" finished-at="2025-08-25T14:47:13 IST" duration-ms="494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.GetUserAPITest@47af7f3d]" started-at="2025-08-25T14:47:13 IST" name="tearDown" finished-at="2025-08-25T14:47:14 IST" duration-ms="377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- api.GetUserAPITest -->
+      <class name="api.CreateUserAPITest">
+        <test-method is-config="true" signature="setupExtent()[pri:0, instance:api.CreateUserAPITest@5fdcaa40]" started-at="2025-08-25T14:46:57 IST" name="setupExtent" finished-at="2025-08-25T14:46:57 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExtent -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:api.CreateUserAPITest@5fdcaa40]" started-at="2025-08-25T14:46:57 IST" name="setUp" finished-at="2025-08-25T14:47:02 IST" duration-ms="4325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateUser()[pri:0, instance:api.CreateUserAPITest@5fdcaa40]" started-at="2025-08-25T14:47:02 IST" name="testCreateUser" finished-at="2025-08-25T14:47:05 IST" duration-ms="3338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.CreateUserAPITest@5fdcaa40]" started-at="2025-08-25T14:47:05 IST" name="tearDown" finished-at="2025-08-25T14:47:06 IST" duration-ms="522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownExtent()[pri:0, instance:api.CreateUserAPITest@5fdcaa40]" started-at="2025-08-25T14:47:36 IST" name="tearDownExtent" finished-at="2025-08-25T14:47:37 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownExtent -->
+      </class> <!-- api.CreateUserAPITest -->
+      <class name="testcases.ValidateAPIAndUILoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.ValidateAPIAndUILoginTest@23e84203]" started-at="2025-08-25T14:47:33 IST" name="setUp" finished-at="2025-08-25T14:47:35 IST" duration-ms="1410" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateApiResponseAndUILoad()[pri:0, instance:testcases.ValidateAPIAndUILoginTest@23e84203]" started-at="2025-08-25T14:47:35 IST" name="validateApiResponseAndUILoad" finished-at="2025-08-25T14:47:35 IST" duration-ms="712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateApiResponseAndUILoad -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.ValidateAPIAndUILoginTest@23e84203]" started-at="2025-08-25T14:47:35 IST" name="tearDown" finished-at="2025-08-25T14:47:36 IST" duration-ms="638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.ValidateAPIAndUILoginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

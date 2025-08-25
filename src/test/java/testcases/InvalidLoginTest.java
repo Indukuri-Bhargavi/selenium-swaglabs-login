@@ -1,6 +1,7 @@
 package testcases;
 
 import base.BaseTest;
+import helpers.DriverFactory;
 import helpers.ExcelUtil;
 
 import org.testng.Assert;
@@ -17,7 +18,7 @@ public class InvalidLoginTest extends BaseTest {
 
     @Test(dataProvider = "negativeLoginData")
     public void loginWithInvalidCredentials(String username, String password, String expectedError) {
-        LoginPage login = new LoginPage(getDriver());
+        LoginPage login = new LoginPage(DriverFactory.getDriver());
         login.login(username, password);
 
         String actualError = login.getErrorMessage();

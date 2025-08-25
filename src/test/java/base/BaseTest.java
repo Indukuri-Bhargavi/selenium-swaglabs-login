@@ -11,13 +11,11 @@ import helpers.DriverFactory;
 
 
 public class BaseTest {
-	  private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+	 // private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	    public static ExtentReports extent;
 	    public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
-	    public WebDriver getDriver() {
-	        return driver.get();
-	    }
+	 
 
 	    @BeforeSuite
 	    public void setupExtent() {
@@ -26,19 +24,21 @@ public class BaseTest {
 	         extent.attachReporter(spark);
 	    }
 
-	    @BeforeMethod
-	    public void setUp() {
-	        String browser = ConfigReader.get("browser");
-	        driver.set(DriverFactory.createDriver(browser)); // ✅ This must be set
-	        getDriver().manage().window().maximize();
-	        getDriver().get(ConfigReader.get("url"));
+	    @BeforeMethod(alwaysRun = true)
+	    @Parameters({"browser"})
+	    public void setUp(@Optional("") String browser) {
+	        DriverFactory.initDriver(browser);
+	        String url = ConfigReader.get("url");
+	        if (url != null && !url.isBlank()) {
+	            DriverFactory.getDriver().get(url);
+	        }
 	    }
 
-	    @AfterMethod
-	    public void tearDown() {
-	        getDriver().quit();
-	        driver.remove();
-	    }
+
+@AfterMethod(alwaysRun = true)
+public void tearDown() {
+    DriverFactory.quitDriver();
+}
 	    public static ExtentTest getTest() {
 	        return test.get(); // 👈 This method enables BaseTest.getTest()
 	    }

@@ -6,6 +6,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
+import helpers.DriverFactory;
 import helpers.ExcelUtil;
 import pages.LoginPage;
 
@@ -19,7 +20,7 @@ public class ValidLoginTest extends BaseTest {
 
     @Test(dataProvider = "loginData")
     public void loginWithMultipleUsers(String username, String password) {
-        LoginPage login = new LoginPage(getDriver());
+        LoginPage login = new LoginPage(DriverFactory.getDriver());
 
         login.login(username, password);
         try {
@@ -29,6 +30,6 @@ public class ValidLoginTest extends BaseTest {
 			e.printStackTrace();
 		}
         System.out.println("🧪 Running test for: " + username + " on Thread: " + Thread.currentThread().getId());
-        Assert.assertTrue(getDriver().getCurrentUrl().contains("inventory")); // basic check
+        Assert.assertTrue(DriverFactory.getDriver().getCurrentUrl().contains("inventory")); // basic check
     }
 }
