@@ -13,7 +13,7 @@ public class InvalidLoginTest extends BaseTest {
 
     @DataProvider(name = "negativeLoginData")
     public Object[][] getNegativeLoginData() {
-        return ExcelUtil.readNegativeLoginData("test-data/LoginData.xlsx", "NegativeLogin");
+        return ExcelUtil.readUserData("test-data/LoginData.xlsx", "NegativeLogin");
     }
 
     @Test(dataProvider = "negativeLoginData")

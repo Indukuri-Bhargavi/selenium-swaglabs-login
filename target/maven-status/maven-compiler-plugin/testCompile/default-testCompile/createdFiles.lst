@@ -1,12 +1,4 @@
 base\BaseTest.class
-api\UpdateUserAPITest.class
-api\CreateUserAPITest.class
 testcases\InvalidLoginTest.class
-listeners\TestListener.class
-api\DeleteUserAPITest.class
-api\NegativeLoginAPITest.class
-testcases\ValidateAPIAndUILoginTest.class
-api\GetUserAPITest.class
 testcases\ValidLoginTest.class
-api\CreateUserDataDrivenTest.class
-api\UserApiTest.class
+listeners\TestListener.class

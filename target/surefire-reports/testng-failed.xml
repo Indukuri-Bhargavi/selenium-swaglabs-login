@@ -8,15 +8,10 @@
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="setupExtent"/>
-          <include name="loginWithMultipleUsers"/>
+          <include name="loginWithMultipleUsers" invocation-numbers="1"/>
           <include name="tearDownExtent"/>
         </methods>
       </class> <!-- testcases.ValidLoginTest -->
-      <class name="api.CreateUserDataDrivenTest">
-        <methods>
-          <include name="createUserTest" invocation-numbers="1 2 3"/>
-        </methods>
-      </class> <!-- api.CreateUserDataDrivenTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

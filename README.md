@@ -2,7 +2,7 @@
 
 # Selenium Automation Framework 🚀
 
-This is a hybrid automation framework built using **Selenium WebDriver**, **TestNG**, **Maven**, and **ExtentReports**, designed to support robust web UI testing and REST API validation.
+This is a hybrid automation framework built using **Selenium WebDriver**, **TestNG**, **Maven**, and **ExtentReports**, designed to support robust web UI testing.
 
 ---
 
@@ -10,31 +10,64 @@ This is a hybrid automation framework built using **Selenium WebDriver**, **Test
 
 selenium-automation-framework/
 ├── src
-│ ├── main
-│ │ └── java
-│ │ ├── helpers # Utility classes (ConfigReader, ExcelUtil, ScreenshotUtil, etc.)
-│ │ └── pages # Page Object Model (POM) classes
-│ └── test
-│ └── java
-│ ├── api # REST Assured-based API tests
-│ ├── base # BaseTest with ThreadLocal WebDriver management
-│ └── testcases # TestNG test classes for positive and negative flows
+│   ├── main
+│   │   └── java
+│   │       ├── helpers        # Utility classes (ConfigReader, ExcelUtil, ScreenshotUtil, ExtentManager, DriverFactory, etc.)
+│   │       └── pages          # Page Object Model (POM) classes (LoginPage, etc.)
+│   └── test
+│       └── java
+│           ├── base           # BaseTest with ThreadLocal WebDriver management
+│           ├── listeners      # TestNG listeners (screenshot capture, reporting)
+│           └── testcases      # TestNG test classes for positive & negative login flows
+├── test-data                  # Test input files (Excel, etc.)
+├── test-output                # Generated reports and logs
+├── config.properties          # Project configuration (URL, browser)
+├── pom.xml                    # Maven dependencies & build configuration
+└── README.md                  # Project documentation
+
 ---
 
+## ⚙️ Execution Flow
+
+      TestNG Suite (testng.xml)
+              │
+              v
+       BaseTest (setup/teardown)
+              │
+              v
+     DriverFactory.java → WebDriver instance
+              │
+              v
+       Page Classes (LoginPage)
+              │
+              v
+     Test Cases (LoginTest, etc.)
+              │
+              v
+       TestListener.java (failure handling, screenshots)
+              │
+              v
+     ExtentManager.java → ExtentReport.html
 
 ---
 
 ## ✨ Features
 
-- ✅ **Selenium WebDriver with Java**
-- ✅ **TestNG** for assertions and test orchestration
-- ✅ **Parallel Execution** using `ThreadLocal<WebDriver>`
-- ✅ **Data-Driven Testing** using Apache POI (Excel)
-- ✅ **Cross-Browser Support** via WebDriverManager
-- ✅ **ExtentReports** with screenshots on failure
-- ✅ **Page Object Model (POM)** for clean separation of test logic
-- ✅ **API Testing** using **Rest Assured**
-- ✅ Configurable via `config.properties`
+✅ Selenium WebDriver with Java
+
+✅ TestNG for test orchestration and assertions
+
+✅ Parallel Execution using ThreadLocal<WebDriver>
+
+✅ Data-Driven Testing with Apache POI (Excel)
+
+✅ Cross-Browser Support with WebDriverManager
+
+✅ ExtentReports with screenshots on failure
+
+✅ Page Object Model (POM) for cleaner, reusable code
+
+✅ Configurable via config.properties
 
 ---
 
@@ -46,7 +79,6 @@ selenium-automation-framework/
 - Maven
 - ExtentReports
 - Apache POI
-- Rest Assured
 - WebDriverManager
 
 ---
@@ -72,8 +104,6 @@ selenium-automation-framework/
 ❌ Invalid Login (error validation)
 
 🔄 Cross-browser execution (Chrome, Firefox, Edge)
-
-📡 REST API validation using ReqRes (GET / POST)
 
 📸 Automatic screenshot capture on test failure
 

@@ -8,10 +8,6 @@
 		<classes>
 			<class name="testcases.ValidLoginTest" />
 			<class name="testcases.InvalidLoginTest" />
-			<class name="api.UpdateUserAPITest" />
-			<class name="api.DeleteUserAPITest" />
-			<class name="api.GetUserAPITest" />
-			<class name="api.CreateUserAPITest" />
 		</classes>
 	</test>
 </suite>

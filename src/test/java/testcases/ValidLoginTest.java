@@ -2,7 +2,6 @@ package testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -10,7 +9,6 @@ import helpers.DriverFactory;
 import helpers.ExcelUtil;
 import pages.LoginPage;
 
-//@Listeners(listeners.TestListener.class)
 public class ValidLoginTest extends BaseTest {
 	
 	@DataProvider(name = "loginData",parallel = true)

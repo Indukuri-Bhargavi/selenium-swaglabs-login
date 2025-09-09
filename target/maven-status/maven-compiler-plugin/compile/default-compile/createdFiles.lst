@@ -1,9 +1,6 @@
-helpers\ScreenshotUtil.class
-helpers\ConfigReader.class
-helpers\ExcelReader.class
-pages\LoginPage.class
-helpers\DriverFactory.class
-helpers\WaitHelper.class
 helpers\ExcelUtil.class
 helpers\ExtentManager.class
-helpers\ExcelWriter.class
+helpers\ScreenshotUtil.class
+helpers\ConfigReader.class
+pages\LoginPage.class
+helpers\DriverFactory.class
