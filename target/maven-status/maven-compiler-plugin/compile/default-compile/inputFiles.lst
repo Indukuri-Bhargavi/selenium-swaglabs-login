@@ -1,8 +1,9 @@
 C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\main\java\helpers\ConfigReader.java
 C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\main\java\helpers\DriverFactory.java
-C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\main\java\helpers\ExcelReader.java
 C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\main\java\helpers\ExcelUtil.java
-C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\main\java\helpers\ExcelWriter.java
 C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\main\java\helpers\ExtentManager.java
 C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\main\java\helpers\ScreenshotUtil.java
+C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\main\java\pages\CartPage.java
+C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\main\java\pages\CheckoutPage.java
 C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\main\java\pages\LoginPage.java
+C:\Users\Krishna Enterprises\eclipse-workspace\selenium-automation-framework\src\main\java\pages\ProductsPage.java

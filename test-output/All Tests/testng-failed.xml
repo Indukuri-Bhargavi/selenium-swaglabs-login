@@ -6,15 +6,13 @@
   </listeners>
   <test thread-count="3" parallel="classes" name="SwagLabs Tests(failed)">
     <classes>
-      <class name="api.DeleteUserAPITest">
+      <class name="testcases.ValidLoginTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testDeleteUser"/>
-          <include name="setupExtent"/>
-          <include name="tearDownExtent"/>
+          <include name="loginWithMultipleUsers" invocation-numbers="1"/>
         </methods>
-      </class> <!-- api.DeleteUserAPITest -->
+      </class> <!-- testcases.ValidLoginTest -->
     </classes>
   </test> <!-- SwagLabs Tests(failed) -->
 </suite> <!-- Failed suite [All Tests] -->
