@@ -36,9 +36,18 @@ public class DriverFactory {
                 prefs.put("profile.password_manager_enabled", false);
                 options.setExperimentalOption("prefs", prefs);
 
-                // Optional: disable other Chrome popups
+                // Optional: disable other popups
                 options.addArguments("--disable-popup-blocking");
-                options.addArguments("--incognito"); // starts fresh each time
+
+                // Set consistent window size (helps in headless or CI)
+                options.addArguments("--window-size=1920,1080");
+                
+                String os = System.getProperty("os.name").toLowerCase();
+                if (os.contains("linux")) {
+                    options.addArguments("--headless=new"); // run headless
+                    options.addArguments("--disable-dev-shm-usage"); // avoid crashes in Docker/CI
+                    options.addArguments("--no-sandbox"); // required for some CI runners
+                }
                 driver.set(new ChromeDriver(options));
                 break;
             }

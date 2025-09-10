@@ -6,8 +6,8 @@
 
 	<test name="SwagLabs Tests">
 		<classes>
-			<!--<class name="testcases.ValidLoginTest" />
-			<class name="testcases.InvalidLoginTest" />-->
+			<class name="testcases.ValidLoginTest" />
+			<class name="testcases.InvalidLoginTest" />
 			<class name="testcases.E2EFlowTest" />
 		</classes>
 	</test>
