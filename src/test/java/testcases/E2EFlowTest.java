@@ -16,8 +16,7 @@ public class E2EFlowTest extends BaseTest{
 	            // 1️⃣ Login
 	            LoginPage login = new LoginPage(DriverFactory.getDriver());
 	            login.login("standard_user", "secret_sauce");
-
-	            Thread.sleep(5000);
+	            
 	            // 2️⃣ Add to Cart
 	            ProductsPage products = new ProductsPage(DriverFactory.getDriver());
 	            products.addFirstProductToCart();

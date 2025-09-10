@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="3" parallel="classes" name="SwagLabs Tests(failed)">
     <classes>
-      <class name="testcases.ValidLoginTest">
+      <class name="testcases.E2EFlowTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="loginWithMultipleUsers" invocation-numbers="1"/>
+          <include name="loginAddToCartCheckout"/>
         </methods>
-      </class> <!-- testcases.ValidLoginTest -->
+      </class> <!-- testcases.E2EFlowTest -->
     </classes>
   </test> <!-- SwagLabs Tests(failed) -->
 </suite> <!-- Failed suite [All Tests] -->
