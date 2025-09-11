@@ -1,15 +1,18 @@
-name: selenium-tests
+name: swaglab-tests
 
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'selenium-swaglabs-login/**'
   pull_request:
     branches: [ main ]
+    paths:
+      - 'selenium-swaglabs-login/**'
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -21,17 +24,12 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Run SwagLabs Tests with Maven
+      - name: Run SwagLabs Tests
         run: mvn clean test
         working-directory: selenium-swaglabs-login
 
-      - name: Run BDD Tests with Maven
-        run: mvn clean test
-        working-directory: Selenium Maven - BDD
-
-      - name: Upload Extent Reports
+      - name: Upload SwagLabs Extent Reports
         uses: actions/upload-artifact@v4
         with:
-          name: extent-reports
-          path: test-output/
-
+          name: swaglab-extent-reports
+          path: selenium-swaglabs-login/test-output/
