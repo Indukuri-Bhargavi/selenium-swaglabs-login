@@ -21,16 +21,17 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Run Tests with Maven
+      - name: Run SwagLabs Tests with Maven
         run: mvn clean test
-	working-directory: selenium-swaglabs-login
+        working-directory: selenium-swaglabs-login
 
-      - name: Run Tests with Maven
-	run: mvn clean test
-	working directory: Selenium Maven - BDD
+      - name: Run BDD Tests with Maven
+        run: mvn clean test
+        working-directory: Selenium Maven - BDD
 
       - name: Upload Extent Reports
         uses: actions/upload-artifact@v4
         with:
           name: extent-reports
           path: test-output/
+
