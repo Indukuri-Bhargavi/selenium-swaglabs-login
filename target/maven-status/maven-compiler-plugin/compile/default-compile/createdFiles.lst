@@ -1,9 +1,0 @@
-helpers\ScreenshotUtil.class
-pages\ProductsPage.class
-helpers\ConfigReader.class
-pages\LoginPage.class
-helpers\DriverFactory.class
-pages\CartPage.class
-pages\CheckoutPage.class
-helpers\ExcelUtil.class
-helpers\ExtentManager.class
