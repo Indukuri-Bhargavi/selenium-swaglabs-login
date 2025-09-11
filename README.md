@@ -2,7 +2,7 @@
 
 This repository contains **two automation frameworks** built with Selenium:
 
-1. **Selenium Maven - TestNG (SwagLab Project)**  
+1. **Selenium-swaglabs-login (SwagLab Project)**  
    A hybrid framework using **Selenium WebDriver + TestNG + ExtentReports**.
 
 2. **Selenium Maven - BDD (Cucumber Project)**  
@@ -14,7 +14,7 @@ This repository contains **two automation frameworks** built with Selenium:
 
 ```
 selenium-automation-framework/
-├── Selenium Maven - TestNG/   # SwagLab automation (TestNG based)
+├── Selenium-swaglabs-login/   # SwagLab automation (TestNG based)
 │   └── README.md
 ├── Selenium Maven - BDD/      # Cucumber BDD automation
 │   └── README.md
