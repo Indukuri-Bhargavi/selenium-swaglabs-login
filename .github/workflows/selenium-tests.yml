@@ -23,6 +23,11 @@ jobs:
 
       - name: Run Tests with Maven
         run: mvn clean test
+	working-directory: selenium-swaglabs-login
+
+      - name: Run Tests with Maven
+	run: mvn clean test
+	working directory: Selenium Maven - BDD
 
       - name: Upload Extent Reports
         uses: actions/upload-artifact@v4
