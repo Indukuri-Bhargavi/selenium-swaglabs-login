@@ -107,6 +107,8 @@ selenium-automation-framework/
 
 📸 Automatic screenshot capture on test failure
 
+🛒 **E2E Flow:** Login → Add to Cart → Checkout → Order Confirmation 
+
 
 📌 Author
 Bhargavi Indukuri
