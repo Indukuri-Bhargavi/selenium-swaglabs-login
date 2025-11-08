@@ -47,14 +47,6 @@ public class DriverFactory {
 
 			    // Consistent screen size
 			    options.addArguments("--window-size=1920,1080");
-
-				/*
-				 * // Extra stability in Linux/CI environments String os =
-				 * System.getProperty("os.name").toLowerCase(); if (os.contains("linux")) {
-				 * options.addArguments("--headless=new");
-				 * options.addArguments("--disable-dev-shm-usage");
-				 * options.addArguments("--no-sandbox"); }
-				 */
 			driver.set(new ChromeDriver(options));
 			break;
 		}
