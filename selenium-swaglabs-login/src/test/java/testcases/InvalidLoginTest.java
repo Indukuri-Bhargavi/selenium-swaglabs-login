@@ -3,7 +3,6 @@ package testcases;
 import base.BaseTest;
 import helpers.DriverFactory;
 import helpers.ExcelUtil;
-
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -11,19 +10,19 @@ import pages.LoginPage;
 
 public class InvalidLoginTest extends BaseTest {
 
-    @DataProvider(name = "negativeLoginData")
-    public Object[][] getNegativeLoginData() {
-        return ExcelUtil.readUserData("test-data/LoginData.xlsx", "NegativeLogin");
-    }
+	@DataProvider(name = "negativeLoginData")
+	public Object[][] getNegativeLoginData() {
+		return ExcelUtil.readUserData("test-data/LoginData.xlsx", "NegativeLogin");
+	}
 
-    @Test(dataProvider = "negativeLoginData")
-    public void loginWithInvalidCredentials(String username, String password, String expectedError) {
-        LoginPage login = new LoginPage(DriverFactory.getDriver());
-        login.login(username, password);
+	@Test(dataProvider = "negativeLoginData")
+	public void loginWithInvalidCredentials(String username, String password, String expectedError) {
+		LoginPage login = new LoginPage(DriverFactory.getDriver());
+		login.login(username, password);
 
-        String actualError = login.getErrorMessage();
-        System.out.println("❌ Actual Error: " + actualError);
+		String actualError = login.getErrorMessage();
+		System.out.println("❌ Actual Error: " + actualError);
 
-        Assert.assertEquals(actualError.trim(), expectedError.trim(), "Error message mismatch");
-    }
+		Assert.assertEquals(actualError.trim(), expectedError.trim(), "Error message mismatch");
+	}
 }

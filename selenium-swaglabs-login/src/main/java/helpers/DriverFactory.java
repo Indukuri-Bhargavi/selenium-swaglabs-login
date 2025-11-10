@@ -1,7 +1,6 @@
 package helpers;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 import java.util.HashMap;
 import java.util.Map;
 import org.openqa.selenium.WebDriver;
@@ -27,26 +26,26 @@ public class DriverFactory {
 		case "chrome": {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
-			 Map<String, Object> prefs = new HashMap<>();
-			    prefs.put("credentials_enable_service", false);
-			    prefs.put("profile.password_manager_enabled", false);
-			    prefs.put("autofill.profile_enabled", false);
-			    prefs.put("autofill.credit_card_enabled", false);
-			    prefs.put("profile.default_content_setting_values.notifications", 2);
+			Map<String, Object> prefs = new HashMap<>();
+			prefs.put("credentials_enable_service", false);
+			prefs.put("profile.password_manager_enabled", false);
+			prefs.put("autofill.profile_enabled", false);
+			prefs.put("autofill.credit_card_enabled", false);
+			prefs.put("profile.default_content_setting_values.notifications", 2);
 
-			    options.setExperimentalOption("prefs", prefs);
+			options.setExperimentalOption("prefs", prefs);
 
-			    // Disable common Chrome popups / first run nags
-			    options.addArguments("--disable-popup-blocking");
-			    options.addArguments("--incognito");
-			    options.addArguments("--no-first-run");
-			    options.addArguments("--no-default-browser-check");
+			// Disable common Chrome popups / first run nags
+			options.addArguments("--disable-popup-blocking");
+			options.addArguments("--incognito");
+			options.addArguments("--no-first-run");
+			options.addArguments("--no-default-browser-check");
 
-			    // Ensure a fresh Chrome profile each run (avoids saving state)
-			    options.addArguments("--user-data-dir=/tmp/chrome-data-" + System.currentTimeMillis());
+			// Ensure a fresh Chrome profile each run (avoids saving state)
+			options.addArguments("--user-data-dir=/tmp/chrome-data-" + System.currentTimeMillis());
 
-			    // Consistent screen size
-			    options.addArguments("--window-size=1920,1080");
+			// Consistent screen size
+			options.addArguments("--window-size=1920,1080");
 			driver.set(new ChromeDriver(options));
 			break;
 		}

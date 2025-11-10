@@ -1,5 +1,6 @@
 package testcases;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import base.BaseTest;
 import helpers.DriverFactory;
@@ -8,37 +9,41 @@ import pages.CheckoutPage;
 import pages.LoginPage;
 import pages.ProductsPage;
 
-public class E2EFlowTest extends BaseTest{
+@Listeners(listeners.TestListener.class)
+public class E2EFlowTest extends BaseTest {
 
-	 @Test
-	    public void loginAddToCartCheckout() {
-	        try {
-	            // 1️⃣ Login
-	            LoginPage login = new LoginPage(DriverFactory.getDriver());
-	            login.login("standard_user", "secret_sauce");
-	            
-	            // 2️⃣ Add to Cart
-	            ProductsPage products = new ProductsPage(DriverFactory.getDriver());
-	            products.addFirstProductToCart();
-	            products.goToCart();
+	@Test
+	public void loginAddToCartCheckout() {
+		try {
+			// 1️⃣ Login
+			LoginPage login = new LoginPage(DriverFactory.getDriver());
+			login.login("standard_user", "secret_sauce");
 
-	            // 3️⃣ Checkout
-	            CartPage cart = new CartPage(DriverFactory.getDriver());
-	            cart.clickCheckout();
+			// 2️⃣ Add to Cart
+			ProductsPage products = new ProductsPage(DriverFactory.getDriver());
+			products.addFirstProductToCart();
+			products.goToCart();
 
-	            CheckoutPage checkout = new CheckoutPage(DriverFactory.getDriver());
-	            checkout.enterDetails("Bhargavi", "Indukuri", "500001");
-	            checkout.completePurchase();
+			// 3️⃣ Checkout
+			CartPage cart = new CartPage(DriverFactory.getDriver());
+			cart.clickCheckout();
 
-	            // ✅ Optional: print success
-	            System.out.println("E2E Flow completed successfully.");
+			CheckoutPage checkout = new CheckoutPage(DriverFactory.getDriver());
+			checkout.enterDetails("Bhargavi", "Indukuri", "500001");
+			checkout.completePurchase();
 
-	        } catch (Exception e) {
-	            // Print exception for debugging
-	            e.printStackTrace();
+			// ✅ Optional: print success
+			if (checkout.isOrderComplete())
+				System.out.println("E2EFlow executed succesfull");
+			else
+				System.out.println("Order was not placed Properly at end");
 
-	            // Fail the test if any exception occurs
-	            org.testng.Assert.fail("E2E Flow failed due to exception: " + e.getMessage());
-	        }
-	    }
+		} catch (Exception e) {
+			// Print exception for debugging
+			e.printStackTrace();
+
+			// Fail the test if any exception occurs
+			org.testng.Assert.fail("E2E Flow failed due to exception: " + e.getMessage());
+		}
+	}
 }

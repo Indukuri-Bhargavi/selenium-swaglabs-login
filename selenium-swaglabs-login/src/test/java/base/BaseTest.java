@@ -1,14 +1,10 @@
 package base;
 
 import org.testng.annotations.*;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
 import helpers.ConfigReader;
 import helpers.DriverFactory;
 
 public class BaseTest {
-	public static ExtentReports extent;
-	public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
 	@BeforeMethod(alwaysRun = true)
 	@Parameters({ "browser" })
