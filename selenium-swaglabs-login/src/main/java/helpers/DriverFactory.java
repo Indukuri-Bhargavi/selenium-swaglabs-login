@@ -1,6 +1,5 @@
 package helpers;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import java.util.HashMap;
 import java.util.Map;
 import org.openqa.selenium.WebDriver;
@@ -24,7 +23,6 @@ public class DriverFactory {
 		switch (br.toLowerCase().trim()) {
 
 		case "chrome": {
-			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			Map<String, Object> prefs = new HashMap<>();
 			prefs.put("credentials_enable_service", false);
@@ -50,15 +48,12 @@ public class DriverFactory {
 			break;
 		}
 		case "firefox": {
-			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
 			driver.set(new FirefoxDriver(options));
 			break;
 		}
 		case "edge": {
-			WebDriverManager.edgedriver().setup();
 			EdgeOptions options = new EdgeOptions();
-
 			driver.set(new EdgeDriver(options));
 			break;
 		}
