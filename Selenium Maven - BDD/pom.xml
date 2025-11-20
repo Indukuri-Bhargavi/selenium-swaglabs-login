@@ -30,11 +30,6 @@
             <artifactId>testng</artifactId>
             <version>7.10.2</version>
         </dependency>
-        <dependency>
-			<groupId>io.github.bonigarcia</groupId>
-			<artifactId>webdrivermanager</artifactId>
-			<version>5.7.0</version> <!-- Use latest if available -->
-		</dependency>
     </dependencies>
 
     <build>

@@ -1,6 +1,5 @@
 package utils;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,7 +15,6 @@ public class DriverFactory {
 
     public static WebDriver getDriver() {
         if (driver.get() == null) {
-        	WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			 Map<String, Object> prefs = new HashMap<>();
 			    prefs.put("credentials_enable_service", false);
@@ -39,17 +37,8 @@ public class DriverFactory {
 			    // Consistent screen size
 			    options.addArguments("--window-size=1920,1080");
 
-			    // Extra stability in Linux/CI environments
-			    String os = System.getProperty("os.name").toLowerCase();
-			    if (os.contains("linux")) {
-			        options.addArguments("--headless=new");
-			        options.addArguments("--disable-dev-shm-usage");
-			        options.addArguments("--no-sandbox");
-			    }
-
 			driver.set(new ChromeDriver(options));
         }
-     //   getDriver().manage().window().maximize();
 		return driver.get();
 	}
     public static void quitDriver() {
